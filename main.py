@@ -46,3 +46,14 @@ for i in dirs:
 print (totalSize)
 
 # end of part 1
+################
+limit = 30000000 - (70000000 - dirs["/main"])
+valid_dirs = []
+for i in dirs:
+    if limit <= dirs[i]:
+        valid_dirs.append(dirs[i])
+        
+    smallest = min(valid_dirs)
+
+print(smallest)
+# end of part 2
